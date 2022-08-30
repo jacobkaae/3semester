@@ -1,0 +1,15 @@
+/Users/jacobkaae/Desktop/3semester/Modul1/Opgave5/bin/Debug/net6.0/Opgave5
+/Users/jacobkaae/Desktop/3semester/Modul1/Opgave5/bin/Debug/net6.0/Opgave5.deps.json
+/Users/jacobkaae/Desktop/3semester/Modul1/Opgave5/bin/Debug/net6.0/Opgave5.runtimeconfig.json
+/Users/jacobkaae/Desktop/3semester/Modul1/Opgave5/bin/Debug/net6.0/Opgave5.dll
+/Users/jacobkaae/Desktop/3semester/Modul1/Opgave5/bin/Debug/net6.0/Opgave5.pdb
+/Users/jacobkaae/Desktop/3semester/Modul1/Opgave5/obj/Debug/net6.0/Opgave5.csproj.AssemblyReference.cache
+/Users/jacobkaae/Desktop/3semester/Modul1/Opgave5/obj/Debug/net6.0/Opgave5.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jacobkaae/Desktop/3semester/Modul1/Opgave5/obj/Debug/net6.0/Opgave5.AssemblyInfoInputs.cache
+/Users/jacobkaae/Desktop/3semester/Modul1/Opgave5/obj/Debug/net6.0/Opgave5.AssemblyInfo.cs
+/Users/jacobkaae/Desktop/3semester/Modul1/Opgave5/obj/Debug/net6.0/Opgave5.csproj.CoreCompileInputs.cache
+/Users/jacobkaae/Desktop/3semester/Modul1/Opgave5/obj/Debug/net6.0/Opgave5.dll
+/Users/jacobkaae/Desktop/3semester/Modul1/Opgave5/obj/Debug/net6.0/refint/Opgave5.dll
+/Users/jacobkaae/Desktop/3semester/Modul1/Opgave5/obj/Debug/net6.0/Opgave5.pdb
+/Users/jacobkaae/Desktop/3semester/Modul1/Opgave5/obj/Debug/net6.0/Opgave5.genruntimeconfig.cache
+/Users/jacobkaae/Desktop/3semester/Modul1/Opgave5/obj/Debug/net6.0/ref/Opgave5.dll
