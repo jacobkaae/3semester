@@ -1,0 +1,15 @@
+C:\Users\Jacob\Desktop\3semester\modul2\opgave1\bin\Debug\net6.0\Opgave1.exe
+C:\Users\Jacob\Desktop\3semester\modul2\opgave1\bin\Debug\net6.0\Opgave1.deps.json
+C:\Users\Jacob\Desktop\3semester\modul2\opgave1\bin\Debug\net6.0\Opgave1.runtimeconfig.json
+C:\Users\Jacob\Desktop\3semester\modul2\opgave1\bin\Debug\net6.0\Opgave1.dll
+C:\Users\Jacob\Desktop\3semester\modul2\opgave1\bin\Debug\net6.0\Opgave1.pdb
+C:\Users\Jacob\Desktop\3semester\modul2\opgave1\obj\Debug\net6.0\Opgave1.csproj.AssemblyReference.cache
+C:\Users\Jacob\Desktop\3semester\modul2\opgave1\obj\Debug\net6.0\Opgave1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jacob\Desktop\3semester\modul2\opgave1\obj\Debug\net6.0\Opgave1.AssemblyInfoInputs.cache
+C:\Users\Jacob\Desktop\3semester\modul2\opgave1\obj\Debug\net6.0\Opgave1.AssemblyInfo.cs
+C:\Users\Jacob\Desktop\3semester\modul2\opgave1\obj\Debug\net6.0\Opgave1.csproj.CoreCompileInputs.cache
+C:\Users\Jacob\Desktop\3semester\modul2\opgave1\obj\Debug\net6.0\Opgave1.dll
+C:\Users\Jacob\Desktop\3semester\modul2\opgave1\obj\Debug\net6.0\refint\Opgave1.dll
+C:\Users\Jacob\Desktop\3semester\modul2\opgave1\obj\Debug\net6.0\Opgave1.pdb
+C:\Users\Jacob\Desktop\3semester\modul2\opgave1\obj\Debug\net6.0\Opgave1.genruntimeconfig.cache
+C:\Users\Jacob\Desktop\3semester\modul2\opgave1\obj\Debug\net6.0\ref\Opgave1.dll

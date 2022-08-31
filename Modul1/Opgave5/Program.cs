@@ -1,8 +1,7 @@
 ﻿// Læs metoden igennem og forstå princippet i løsningen.
 // Input 'path' er den mappe man starter i
 // Opgave5.ScanDir("/Users/jacobkaae/Desktop/3semester/Modul1");
-Console.WriteLine(Opgave5.ScanDirCount("/Users/jacobkaae/Desktop/3semester/Modul1"));
-
+Console.WriteLine(Opgave5.ScanDirCount("C:/Users/Jacob/Desktop/3semester/Modul1/Opgave2"));
 class Opgave5
 {
     public static void ScanDir(string path)
@@ -38,11 +37,9 @@ class Opgave5
         }
         else
         {
-            antal = dirs.Count();
-
             foreach (DirectoryInfo subdir in dirs)
             {
-                antal = ScanDirCount(subdir.FullName);
+                return dirs.Count() + ScanDirCount(subdir.FullName);
             }
 
             return antal;
