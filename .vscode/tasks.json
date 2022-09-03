@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/Modul2/Opgave2/Opgave2.csproj",
+                "${workspaceFolder}/Modul2/Opgave3/Opgave3.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/Modul2/Opgave2/Opgave2.csproj",
+                "${workspaceFolder}/Modul/Opgave3/Opgave3.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/Modul2/Opgave2/Opgave2.csproj"
+                "${workspaceFolder}/Modul2/Opgave3/Opgave3.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

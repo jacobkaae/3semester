@@ -23,15 +23,31 @@ foreach (Person person in over30)
 
 
 // Lav et nyt array med de samme personer, men hvor “+45” er fjernet fra alle telefonnumre.
-var nytArray = people.Select(p => { p.Phone = "hvad fuck altså"; return p; } );
+var nytArray = people.Select(p => new Person
+{
+    Name = p.Name,
+    Age = p.Age,
+    Phone = p.Phone.Substring(3, 8)
+}).ToArray();
 
 
 // Generér en string med navn og telefonnummer på de personer, der er yngre end 30, adskilt med komma
 var under30 = people.Where(p => p.Age < 30).ToArray();
+Console.WriteLine("Personer under 30 år: " + Person.Under30String(under30));
 
 class Person
 {
     public string Name { get; set; }
     public int Age { get; set; }
     public string Phone { get; set; }
+
+    public static string Under30String(Person[] array)
+    {
+        if (array.Length == 0)
+        {
+            return ".";
+        } else {
+            return $" {array[0].Name} er {array[0].Age} år gammel," + Under30String(array.Skip(1).ToArray());
+        }
+    }
 }

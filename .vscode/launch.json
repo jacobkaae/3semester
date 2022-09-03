@@ -7,7 +7,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/Modul2/Opgave2/bin/Debug/net6.0/Opgave2.dll",
+            "program": "${workspaceFolder}/Modul2/Opgave3/bin/Debug/net6.0/Opgave3.dll",
             "args": [],
             "cwd": "${workspaceFolder}",
             "console": "integratedTerminal",
