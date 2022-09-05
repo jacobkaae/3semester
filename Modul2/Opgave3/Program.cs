@@ -15,4 +15,4 @@ var CreateWordFilterFn = (string[] words) =>
 
 var ord = new string[] { "Hej", "Med", "Dig" };
 var vedIk = CreateWordFilterFn(ord);
-Console.WriteLine("Test:" + vedIk("Ok, Hej med dig Jacob"));
+Console.WriteLine("Test:" + vedIk("Ok, Hej med dig Morten"));
