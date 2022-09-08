@@ -23,17 +23,40 @@ Spørgsmål[] Quiz = new Spørgsmål[]
 
 // GET /api/questions: Henter alle spørgsmål og deres svarmuligheder, men ikke hvilke svar der er de rigtige
 app.MapGet("/api/questions", () => {
-    var nytarray = Quiz.Select(p => new Spg
+    var nytArray = Quiz.Select(p => new SpgUdenSvar
     {
-        spg = p.SpgText,
-        spgvalg = p.Svarmuligheder.ToArray()
-    }).ToArray();
+       SpgText = p.SpgText,
+       Svarmuligheder = p.Svarmuligheder
+    });
 
-    return nytarray;
-}); 
+    return nytArray;
+});
 
+// GET /api/questions/{id}: Henter et bestemt spørgsmål og dets svarmuligheder, men ikke hvilket svar der er det rigtige
+app.MapGet("/api/questions/{id}", (int id) => {
+    var nytArray = Quiz.Select(p => new SpgIdUdenSvar
+    {
+        Id = p.Id,
+        SpgText = p.SpgText,
+        Svarmuligheder = p.Svarmuligheder
+    }).Where(q => q.Id == id);
 
+    return nytArray;
+});
 
+// POST /api/questions/{id}/validate: Her kan postes et spørgsmåls-id og en svarmulighed,
+//                                    og så får man at vide, om svaret er rigtigt eller forkert
+app.MapPost("/api/questions/{id}/validate", (int id, SvarMulighed Svaret) => {
+    var svarIndex = Quiz.Where(q => q.Id == id).Select(x => x.SvarIndex).First();
+    if (Svaret.svar == Quiz[id].Svarmuligheder[svarIndex].ToString())
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+});
 
 
 // GET /api/tasks/{id}
@@ -73,8 +96,20 @@ app.MapGet("/api/questions", () => {
 
 app.Run();
 
+record SvarMulighed(string svar);
 
-record Spg(string spg, string[] spgvalg);
+public class SpgIdUdenSvar
+{
+    public long Id { get; set; }
+    public string SpgText { get; set; }
+    public string[] Svarmuligheder { get; set; }
+}
+
+public class SpgUdenSvar
+{
+    public string SpgText { get; set; }
+    public string[] Svarmuligheder { get; set; }
+}
 
 public class Spørgsmål
 {
