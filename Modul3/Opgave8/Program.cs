@@ -1,43 +1,73 @@
 var builder = WebApplication.CreateBuilder(args);
+
+var AllowCors = "_AllowCors";
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: AllowCors, builder => {
+        builder.AllowAnyOrigin()
+               .AllowAnyHeader()
+               .AllowAnyMethod();
+    });
+});
+
 var app = builder.Build();
+app.UseCors(AllowCors);
+
+int nextId = 0;
 
 Task[] Huskeliste = new Task[]
 {
-    new Task { Id = 1, Text = "Rydde op", Done = false},
-    new Task { Id = 2, Text = "Vaske gulv", Done = false},
-    new Task { Id = 3, Text = "Toiletter", Done = false}
+    new Task { Id = nextId++, Text = "Rydde op", Done = false},
+    new Task { Id = nextId++, Text = "Vaske gulv", Done = false},
+    new Task { Id = nextId++, Text = "Toiletter", Done = false}
 
 };
 
 // GET /api/tasks
-app.MapGet("/api/task", () => Huskeliste);
+app.MapGet("/api/tasks", () => Huskeliste);
 
 // GET /api/tasks/{id}
-app.MapGet("/api/task/{id}", (int id) => Huskeliste.Where(p => p.Id == id));
+app.MapGet("/api/tasks/{id}", (int id) => Huskeliste.Where(p => p.Id == id));
 
 // PUT /api/tasks/{id}
-app.MapPut("/api/task/{id}", (int id, Task opdTask) =>
+app.MapPut("/api/tasks/{id}", (int id, Task opdTask) =>
 {
-    if (Huskeliste.Where(p => p.Id == id) == null)
+    return Huskeliste = Huskeliste.Select(x =>
     {
-        Console.WriteLine("Der findes ingen opgave med dette ID");
+        if (x.Id == id)
+        {
+            x = opdTask;
+            x.Id = id;
+            return x;
+        } else
+        {
+            return x;
+        }
+    }).ToArray();
 
-        return Huskeliste;
-    }
-    else
-    {
-        Huskeliste.Select(x => opdTask).Where(p => p.Id == id);
+    // Best practice
+    //return Huskeliste = Huskeliste.Select(x => x.Id == id ? opdTask : x).ToArray();
 
-        return Huskeliste;
-    }
+});
+
+
+// DELETE /api/tasks/{id}
+app.MapDelete("/api/tasks/{id}", (int id) => Huskeliste = Huskeliste.Where(x => x.Id != id).ToArray());
+
+
+// POST /api/tasks/
+app.MapPost("/api/tasks", (Task nyTask) => {
+    nyTask.Id = nextId++;
+    return Huskeliste = Huskeliste.Append(nyTask).ToArray();
 });
 
 app.Run();
 
 
+
 public class Task
 {
-    public int Id { get; set; }
+    public long Id { get; set; }
     public string Text { get; set; }
     public bool Done { get; set; }
 }

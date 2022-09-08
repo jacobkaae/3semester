@@ -8,11 +8,36 @@ var CreateWordFilterFn = (string[] words) =>
 {
     return (string tekst) =>
     {
-        return tekst = tekst
-            .Replace(words[0], "");
+        words.ToList().ForEach(p => tekst = tekst.Replace(p, ""));
+
+        return tekst;
     };
 };
 
-var ord = new string[] { "Hej", "Med", "Dig" };
-var vedIk = CreateWordFilterFn(ord);
-Console.WriteLine("Test:" + vedIk("Ok, Hej med dig Morten"));
+//var ord = new string[] { "Hej", "Med", "Dig" };
+
+//var vedIk = CreateWordFilterFn(ord);
+
+//Console.WriteLine("Test:" + vedIk("Goddag, Hej Med Dig Jacob"));
+
+
+// CreateWordReplacerFn: Funktionen skal returnere en ny funktion.
+// Den nye funktion tager en tekst som input, erstatter alle ord der matcher et ord i “words” med “replacementWord”, og returnerer den nye tekst.
+
+
+var CreateWordReplacerFn = (string[] words, string replacementWord) =>
+{
+    return (string tekst) =>
+    {
+        words.ToList().ForEach(p => tekst = tekst.Replace(p, replacementWord));
+
+        return tekst;
+    };
+};
+
+var badWords = new string[] { "tis", "pis", "lort" };
+
+var FilterBadWords = CreateWordReplacerFn(badWords, "banan");
+
+Console.WriteLine(FilterBadWords("Sikke en gang pis lort"));
+
