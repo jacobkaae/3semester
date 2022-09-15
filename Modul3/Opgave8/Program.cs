@@ -1,49 +1,61 @@
+using Microsoft.EntityFrameworkCore;
+using Opgave8.Model;
+
 var builder = WebApplication.CreateBuilder(args);
 
 var AllowCors = "_AllowCors";
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy(name: AllowCors, builder => {
+    options.AddPolicy(name: AllowCors, builder =>
+    {
         builder.AllowAnyOrigin()
                .AllowAnyHeader()
                .AllowAnyMethod();
     });
 });
 
+builder.Services.AddDbContext<TaskContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("TaskContextSQLite")));
+
 var app = builder.Build();
 app.UseCors(AllowCors);
 
-int nextId = 0;
-
-Task[] Huskeliste = new Task[]
-{
-    new Task { Id = nextId++, Text = "Rydde op", Done = false},
-    new Task { Id = nextId++, Text = "Vaske gulv", Done = false},
-    new Task { Id = nextId++, Text = "Toiletter", Done = false}
-
-};
-
 // GET /api/tasks
-app.MapGet("/api/tasks", () => Huskeliste);
+app.MapGet("/api/tasks", (TaskContext db) =>
+{
+    return db.Tasks;
+});
 
 // GET /api/tasks/{id}
-app.MapGet("/api/tasks/{id}", (int id) => Huskeliste.Where(p => p.Id == id));
+app.MapGet("/api/tasks/{id}", (int id, TaskContext db) =>
+{
+    return db.Tasks.Where(p => p.TaskId == id);
+});
 
 // PUT /api/tasks/{id}
-app.MapPut("/api/tasks/{id}", (int id, Task opdTask) =>
+app.MapPut("/api/tasks/{id}", (int id, Opgave8.Model.Task opdTask, TaskContext db) =>
 {
-    return Huskeliste = Huskeliste.Select(x =>
-    {
-        if (x.Id == id)
-        {
-            x = opdTask;
-            x.Id = id;
-            return x;
-        } else
-        {
-            return x;
-        }
-    }).ToArray();
+    var dbTask = db.Tasks
+        .Where(x => x.TaskId == id)
+        .First();
+
+    dbTask.Text = opdTask.Text;
+    dbTask.Done = opdTask.Done;
+
+    db.SaveChanges();
+    //return Huskeliste = Huskeliste.Select(x =>
+    //{
+    //    if (x.Id == id)
+    //    {
+    //        x = opdTask;
+    //        x.Id = id;
+    //        return x;
+    //    }
+    //    else
+    //    {
+    //        return x;
+    //    }
+    //}).ToArray();
 
     // Best practice
     //return Huskeliste = Huskeliste.Select(x => x.Id == id ? opdTask : x).ToArray();
@@ -52,22 +64,25 @@ app.MapPut("/api/tasks/{id}", (int id, Task opdTask) =>
 
 
 // DELETE /api/tasks/{id}
-app.MapDelete("/api/tasks/{id}", (int id) => Huskeliste = Huskeliste.Where(x => x.Id != id).ToArray());
+app.MapDelete("/api/tasks/{id}", (int id, TaskContext db) =>
+{
+    var sletTask = db.Tasks
+        .Where(x => x.TaskId == id)
+        .First();
+
+    db.Remove(sletTask);
+    return db.SaveChanges();
+});
 
 
 // POST /api/tasks/
-app.MapPost("/api/tasks", (Task nyTask) => {
-    nyTask.Id = nextId++;
-    return Huskeliste = Huskeliste.Append(nyTask).ToArray();
+app.MapPost("/api/tasks", (Opgave8.Model.Task nyTask, TaskContext db) =>
+{
+    db.Add(new Opgave8.Model.Task(nyTask.Text, nyTask.Done));
+    return db.SaveChanges();
 });
 
 app.Run();
 
 
 
-public class Task
-{
-    public long Id { get; set; }
-    public string Text { get; set; }
-    public bool Done { get; set; }
-}
