@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{E07480EC-CD00-418C-9520-ED360E7289CB}|TodoListBlazor">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="App.razor">
+    <Files>
+      <File FileName="Program.cs" Line="17" Column="1" />
+      <File FileName="App.razor" Line="9" Column="13" />
+      <File FileName="Pages/TodoList.razor" Line="18" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ToDoBlazor" expanded="True" selected="True">
+            <Node name="ToDoListBlazor" expanded="True">
+              <Node name="Pages" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ToDoListBlazor PreferredExecutionTarget="/Applications/Safari.app" />
+</Properties>

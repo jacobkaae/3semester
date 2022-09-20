@@ -1,0 +1,49 @@
+﻿<Properties StartupConfiguration="{A029854E-3AC5-494E-A37C-EA62AC99E321}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.TodoListBlazor PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/TodoList.razor">
+    <Files>
+      <File FileName="App.razor" Line="1" Column="1" />
+      <File FileName="Data/TaskData.cs" Line="7" Column="2" />
+      <File FileName="Properties/launchSettings.json" Line="1" Column="1" />
+      <File FileName="Shared/TodoTask.razor" Line="17" Column="10" />
+      <File FileName="wwwroot/css/app.css" Line="1" Column="1" />
+      <File FileName="_Imports.razor" Line="1" Column="1" />
+      <File FileName="wwwroot/appsettings.json" Line="1" Column="1" />
+      <File FileName="Data/TodoListService.cs" Line="20" Column="1" />
+      <File FileName="Shared/MainLayout.razor" Line="1" Column="1" />
+      <File FileName="Program.cs" Line="1" Column="1" />
+      <File FileName="wwwroot/appsettings.Development.json" Line="3" Column="2" />
+      <File FileName="Shared/PostTask.razor" Line="17" Column="4" />
+      <File FileName="Pages/TodoList.razor" Line="29" Column="18" />
+      <File FileName="../Opgave3/Program.cs" Line="44" Column="31" />
+      <File FileName="Pages/Index.razor" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TodoListBlazor" expanded="True">
+            <Node name="Opgave3" expanded="True" />
+            <Node name="TodoListBlazor" expanded="True">
+              <Node name="Data" expanded="True" />
+              <Node name="Pages" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Shared" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="appsettings.json" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

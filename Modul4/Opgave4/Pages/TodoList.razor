@@ -1,0 +1,51 @@
+﻿@page "/fetchdata"
+
+@using TodoListBlazor.Data;
+@inject TodoListService todoService
+
+@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+
+<PageTitle>The Todo List</PageTitle>
+
+<h1>The Todo List</h1>
+
+@if (spørgsmål == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <ol>
+        @foreach (var spg in spørgsmål)
+        {
+            <li>
+                @*<TodoTask Task=@task></TodoTask>*@
+                <p>@spg.SpgText</p>
+                @foreach (var svar in spg.Svarmuligheder)
+                    {
+                        <p>@svar</p>
+                    }
+            </li>
+        }
+    </ol>
+}
+
+@*<PostTask />*@
+
+@code {
+    private Spørgsmål[]? spørgsmål;
+
+    protected override async Task OnInitializedAsync()
+    {
+        spørgsmål = await todoService.GetTaskData();
+        todoService.RefreshRequired += this.RefreshMe;
+    }  
+    
+    private async void RefreshMe()
+    {
+        spørgsmål = await todoService.GetTaskData();
+        StateHasChanged();
+        Console.WriteLine("Refreshed");
+    }  
+}
