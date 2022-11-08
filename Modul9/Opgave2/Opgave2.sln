@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1703.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opgave2", "Opgave2\Opgave2.csproj", "{28520779-54F0-4784-8381-406BF4C21DDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "search", "..\..\search\search.csproj", "{7DD82DDE-0721-4523-9399-15B391814351}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28520779-54F0-4784-8381-406BF4C21DDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28520779-54F0-4784-8381-406BF4C21DDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28520779-54F0-4784-8381-406BF4C21DDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28520779-54F0-4784-8381-406BF4C21DDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DD82DDE-0721-4523-9399-15B391814351}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DD82DDE-0721-4523-9399-15B391814351}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DD82DDE-0721-4523-9399-15B391814351}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DD82DDE-0721-4523-9399-15B391814351}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E77AF530-AF8E-4F5A-AEE9-1C84C914C708}
+	EndGlobalSection
+EndGlobal
