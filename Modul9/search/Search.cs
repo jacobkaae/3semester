@@ -8,8 +8,16 @@
         /// <param name="array">Det array der søges i.</param>
         /// <param name="tal">Det tal der skal findes.</param>
         /// <returns></returns>
-        public static int FindNumberLinear(int[] array, int tal) {
+        public static int FindNumberLinear(int[] array, int tal)
+        {
             // TODO: Implement!
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i] == tal)
+                {
+                    return i;
+                }
+            }
             return -1;
         }
         /// <summary>
@@ -18,8 +26,29 @@
         /// <param name="array">Det array der søges i.</param>
         /// <param name="tal">Det tal der skal findes.</param>
         /// <returns></returns>
-        public static int FindNumberBinary(int[] array, int tal) {
+        public static int FindNumberBinary(int[] array, int tal)
+        {
             // TODO: Implement!
+            var min = 0;
+            var max = array.Length - 1;
+
+            while (min <= max)
+            {
+                var mid = (min + max) / 2;
+
+                if (tal == array[mid])
+                {
+                    return mid;
+                }
+                else if (tal < array[mid])
+                {
+                    max = mid - 1;
+                }
+                else
+                {
+                    min = mid + 1;
+                }
+            }
             return -1;
         }
 
@@ -44,10 +73,34 @@
         /// </summary>
         /// <param name="tal">Tallet der skal indsættes</param>
         /// <returns>En kopi af det sorterede array med det nye tal i.</returns>
-        public static int[] InsertSorted(int tal) {
+        public static int[] InsertSorted(int tal)
+        {
             // TODO: Implement!
-            
-            return sortedArray;
+            int next = FindNumberLinear(sortedArray, -1);
+
+            if (next == -1)
+            {
+                return sortedArray;
+            }
+            else
+            {
+                sortedArray[next] = tal;
+
+                for (int i = 0; i <= next; i++)
+                {
+                    for (int j = i+1; j <= next; j++)
+                    {
+                        if (sortedArray[i] > sortedArray[j])
+                        {
+                            int temp = sortedArray[i];
+                            sortedArray[i] = sortedArray[j];
+                            sortedArray[j] = temp;
+                        }
+                    }
+                }
+
+                return sortedArray;
+            }
         }
     }
 }

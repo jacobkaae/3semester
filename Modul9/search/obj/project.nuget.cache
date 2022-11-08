@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kurWu6v/3dt3uHy+hRLKODfsjrxkZo3O3UjIOGYA45uYr3GkWBqLc/9atAYV12OJKTJXe6YZGq9o0bqS9yCMnw==",
+  "dgSpecHash": "hwMnCxZuh9NG3G4tK4N1QCKdr59gV3DdwJXnm5cZnuzR2mzaGyb8SqaaN8WrCSI2fIVSX8daKIdZkPu0sNLbLw==",
   "success": true,
-  "projectFilePath": "/Users/jacobkaae/Desktop/KristianGit/softark-fall-2022/modul10/search/search.csproj",
+  "projectFilePath": "/Users/jacobkaae/Desktop/3semester/Modul9/search/search.csproj",
   "expectedPackageFiles": [
     "/Users/jacobkaae/.nuget/packages/coverlet.collector/3.1.0/coverlet.collector.3.1.0.nupkg.sha512",
     "/Users/jacobkaae/.nuget/packages/microsoft.codecoverage/16.11.0/microsoft.codecoverage.16.11.0.nupkg.sha512",

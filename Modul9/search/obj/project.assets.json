@@ -6209,11 +6209,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jacobkaae/Desktop/KristianGit/softark-fall-2022/modul10/search/search.csproj",
+      "projectUniqueName": "/Users/jacobkaae/Desktop/3semester/Modul9/search/search.csproj",
       "projectName": "search",
-      "projectPath": "/Users/jacobkaae/Desktop/KristianGit/softark-fall-2022/modul10/search/search.csproj",
+      "projectPath": "/Users/jacobkaae/Desktop/3semester/Modul9/search/search.csproj",
       "packagesPath": "/Users/jacobkaae/.nuget/packages/",
-      "outputPath": "/Users/jacobkaae/Desktop/KristianGit/softark-fall-2022/modul10/search/obj/",
+      "outputPath": "/Users/jacobkaae/Desktop/3semester/Modul9/search/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/jacobkaae/.nuget/NuGet/NuGet.Config"
