@@ -23,8 +23,8 @@ public class SortTester
         int[] bigArray5 = (int[]) bigArray.Clone();
 
         Stopwatch stopWatch = new Stopwatch();
-        
-        // Bubble Sort Test
+
+        //Bubble Sort Test
         stopWatch.Start();
         BubbleSort.Sort(bigArray1);
         stopWatch.Stop();
@@ -34,7 +34,7 @@ public class SortTester
             ts.Milliseconds / 10);
         Console.WriteLine("BubbleSort " + elapsedTime);
 
-        // Insertion Sort Test
+        //Insertion Sort Test
         stopWatch.Reset();
         stopWatch.Start();
         InsertionSort.Sort(bigArray2);
@@ -45,7 +45,7 @@ public class SortTester
             ts.Milliseconds / 10);
         Console.WriteLine("InsertionSort " + elapsedTime);
 
-        // Selection Sort Test
+        //Selection Sort Test
         stopWatch.Reset();
         stopWatch.Start();
         SelectionSort.Sort(bigArray3);
