@@ -1,9 +1,9 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace LinkedList.Tests
+namespace DoublyLinkedList.Tests
 {
     [TestClass]
-    public class LinkedList_Tests
+    public class DoublyLinkedList
     {
         [TestMethod]
         public void TestAddFirst()
@@ -12,9 +12,12 @@ namespace LinkedList.Tests
             User mads = new User("Mads", 2);
             User torill = new User("Torill", 3);
 
-            UserLinkedList list = new UserLinkedList();
+            UserDoublyLinkedList list = new UserDoublyLinkedList();
             list.AddFirst(kristian);
-            Assert.AreEqual(kristian, list.GetFirst());
+            list.AddFirst(mads);
+            list.AddFirst(torill);
+
+            Assert.AreEqual(torill, list.GetFirst());
         }
 
         [TestMethod]
@@ -24,86 +27,43 @@ namespace LinkedList.Tests
             User mads = new User("Mads", 2);
             User torill = new User("Torill", 3);
 
-            UserLinkedList list = new UserLinkedList();
+            UserDoublyLinkedList list = new UserDoublyLinkedList();
             list.AddFirst(kristian);
             list.AddFirst(mads);
             list.AddFirst(torill);
+
             Assert.AreEqual(torill, list.RemoveFirst());
         }
 
+
         [TestMethod]
-        public void TestCountUsers()
+        public void TestAddLast()
         {
             User kristian = new User("Kristian", 1);
             User mads = new User("Mads", 2);
             User torill = new User("Torill", 3);
 
-            UserLinkedList list = new UserLinkedList();
+            UserDoublyLinkedList list = new UserDoublyLinkedList();
             list.AddFirst(kristian);
             list.AddFirst(mads);
-            list.AddFirst(torill);
-            Assert.AreEqual(3, list.CountUsers());
+            list.AddLast(torill);
+
+            Assert.AreEqual(torill, list.GetLast());
         }
 
         [TestMethod]
-        public void TestRemoveUser()
+        public void TestRemoveLast()
         {
             User kristian = new User("Kristian", 1);
             User mads = new User("Mads", 2);
             User torill = new User("Torill", 3);
-            User henrik = new User("Henrik", 5);
-            User klaus = new User("Klaus", 6);
 
-            UserLinkedList list = new UserLinkedList();
+            UserDoublyLinkedList list = new UserDoublyLinkedList();
             list.AddFirst(kristian);
             list.AddFirst(mads);
             list.AddFirst(torill);
-            list.AddFirst(henrik);
-            list.AddFirst(klaus);
 
-            list.RemoveUser(mads);
-            Assert.AreEqual(4, list.CountUsers());
-            list.RemoveUser(kristian);
-            Assert.AreEqual(3, list.CountUsers());
+            Assert.AreEqual(kristian, list.RemoveLast());
         }
-
-        [TestMethod]
-        public void TestGetLast()
-        {
-            User kristian = new User("Kristian", 1);
-            User mads = new User("Mads", 2);
-            User torill = new User("Torill", 3);
-            User henrik = new User("Henrik", 5);
-            User klaus = new User("Klaus", 6);
-
-            UserLinkedList list = new UserLinkedList();
-            list.AddFirst(kristian);
-            list.AddFirst(mads);
-            list.AddFirst(torill);
-            list.AddFirst(henrik);
-            list.AddFirst(klaus);
-
-            Assert.AreEqual(kristian.Name, list.GetLast().Name);
-        }
-
-        [TestMethod]
-        public void TestContainsUser()
-        {
-            User kristian = new User("Kristian", 1);
-            User mads = new User("Mads", 2);
-            User torill = new User("Torill", 3);
-            User henrik = new User("Henrik", 5);
-            User klaus = new User("Klaus", 6);
-
-            UserLinkedList list = new UserLinkedList();
-            list.AddFirst(kristian);
-            list.AddFirst(mads);
-            list.AddFirst(torill);
-            list.AddFirst(henrik);
-            list.AddFirst(klaus);
-
-            Assert.AreEqual(true, list.Contains(kristian));
-        }
-
     }
 }

@@ -1,44 +1,54 @@
 ﻿<Properties StartupConfiguration="{9ADE8225-6A97-4018-8649-4272AAC42FA0}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/jacobkaae/Desktop/3semester/Modul12/Sortering/MergeSort.cs" relfile="MergeSort.cs" line="25" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.sortering PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="MergeSort.cs">
     <Files>
-      <File FileName="SortTester.cs" Line="42" Column="23" />
+      <File FileName="SortTester.cs" Line="69" Column="1" />
       <File FileName="BubbleSort.cs" Line="19" Column="14" />
       <File FileName="InsertionSort.cs" Line="18" Column="14" />
       <File FileName="Sortering.Tests.cs" Line="11" Column="61" />
       <File FileName="SelectionSort.cs" Line="33" Column="1" />
-      <File FileName="QuickSort.cs" Line="1" Column="1" />
+      <File FileName="QuickSort.cs" Line="40" Column="1" />
       <File FileName="Program.cs" Line="1" Column="1" />
-      <File FileName="MergeSort.cs" Line="21" Column="1" />
+      <File FileName="MergeSort.cs" Line="46" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="sortering" expanded="True">
-            <Node name="sortering" expanded="True" />
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="sortering" expanded="True" selected="True">
             <Node name="sortering" expanded="True">
-              <Node name="Sortering.Tests" expanded="True">
-                <Node name="Sortering_Tests" expanded="True" />
-              </Node>
+              <Node name="MergeSort.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>array</Value>
+          <Value>indexLow</Value>
+          <Value>indexHigh</Value>
+          <Value>indexArray</Value>
+          <Value>low</Value>
+          <Value>middle</Value>
+          <Value>high</Value>
+          <Value>lowArray</Value>
+          <Value>highArray</Value>
+          <Value>array[2]</Value>
+          <Value>array[3]</Value>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="sortering" expanded="True" selected="True" />
+        </State>
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.sortering PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

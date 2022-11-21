@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{D8A047C0-E16C-448C-846D-4D0D0ABD5FC5}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="UserDoublyLinkedList.cs">
+    <Files>
+      <File FileName="UserLinkedList.Tests.cs" Line="79" Column="56" />
+      <File FileName="Program.cs" Line="7" Column="39" />
+      <File FileName="User.cs" Line="1" Column="1" />
+      <File FileName="UserLinkedList.cs" Line="68" Column="9" />
+      <File FileName="SortedUserLinkedList.cs" Line="19" Column="59" />
+      <File FileName="UserDoublyLinkedList.cs" Line="26" Column="28" />
+      <File FileName="SortedUserLinkedList.Tests.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="list" expanded="True">
+            <Node name="list" expanded="True">
+              <Node name="UserDoublyLinkedList.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="list" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.list PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

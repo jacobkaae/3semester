@@ -1,67 +1,87 @@
-﻿namespace LinkedList
+﻿namespace DoublyLinkedList
 {
     class Node
     {
-        public Node(User data, Node next)
+        public Node(User data, Node previous, Node next)
         {
             this.Data = data;
+            this.Previous = previous;
             this.Next = next;
         }
+
         public User Data;
+        public Node Previous;
         public Node Next;
     }
 
-    class UserLinkedList
+    class UserDoublyLinkedList
     {
         private Node first = null!;
-        
+        private Node last = null!;
+
         public void AddFirst(User user)
         {
-            Node node = new Node(user, first);
-            first = node;
+            if (first == null)
+            {
+                Node node = new Node(user, null, null);
+                first = node;
+                last = node;
+            }
+            else
+            {
+                Node node = new Node(user, null, first);
+                first.Previous = node;
+                first = node;
+            }
+        }
+
+        public void AddLast(User user)
+        {
+            if (last == null)
+            {
+                Node node = new Node(user, null, null);
+                first = node;
+                last = node;
+            }
+            else
+            {
+                Node node = new Node(user, last, null);
+                last.Next = node;
+                last = node;
+            }
         }
 
         public User RemoveFirst()
         {
-            // TODO: Implement!
-            Node removedNode = first;
-
             if (first == null)
             {
-                return null!;
+                return null;
             }
             else
             {
+                Node removedNode = first;
+
+                first.Next.Previous = null;
                 first = first.Next;
+
                 return removedNode.Data;
             }
         }
 
-        public void RemoveUser(User user)
+        public User RemoveLast()
         {
-            Node node = first;
-            Node previous = null!;
-            bool found = false;
-
-            while (!found && node != null)
+            if (first == null)
             {
-                if (node.Data.Name == user.Name)
-                {
-                    found = true;
-                    if (node == first)
-                    {
-                        RemoveFirst();
-                    }
-                    else
-                    {
-                        previous.Next = node.Next;
-                    }
-                }
-                else
-                {
-                    previous = node;
-                    node = node.Next;
-                }
+                return null;
+            }
+            else
+            {
+                Node removedNode = last;
+
+                last.Previous.Next = null;
+                last = last.Previous;
+
+                return removedNode.Data;
             }
         }
 
@@ -72,46 +92,7 @@
 
         public User GetLast()
         {
-            // TODO: Implement
-            Node node = first;
-
-            if (first == null)
-            {
-                return null!;
-            }
-            else
-            {
-                while (node.Next != null)
-                {
-                    node = node.Next;
-                }
-                return node.Data;
-            }
-        }
-
-        public int CountUsers()
-        {
-            // TODO: Implement
-            int sum = 0;
-            Node node = first;
-
-            if (first == null)
-            {
-                return -1;
-            }
-            else
-            {
-                sum += 1;
-
-                while (node.Next != null)
-                {
-                    sum += 1;
-
-                    node = node.Next;
-                }
-
-                return sum;
-            }
+            return last.Data;
         }
 
         public override String ToString()
@@ -124,31 +105,6 @@
                 node = node.Next;
             }
             return result.Trim();
-        }
-
-        public bool Contains(User user)
-        {
-            Node node = first;
-
-            if (node == null)
-            {
-                return false;
-            }
-            else
-            {
-                while (node != null)
-                {
-                    if (node.Data == user)
-                    {
-                        return true;
-                    }
-                    else
-                    {
-                        node = node.Next;
-                    }
-                }
-                return false;
-            }
         }
     }
 }

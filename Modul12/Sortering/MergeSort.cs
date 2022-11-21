@@ -28,12 +28,12 @@ public static class MergeSort
         int[] lowArray = new int[lowArrayLength];
         int[] highArray = new int[highArrayLength];
 
-        for (int i = 0; i < lowArrayLength; ++i)
+        for (int i = 0; i < lowArrayLength; i++)
         {
             lowArray[i] = array[low + i];
         }
 
-        for (int j = 0; j < highArrayLength; ++j)
+        for (int j = 0; j < highArrayLength; j++)
         {
             highArray[j] = array[middle + 1 + j];
         }
