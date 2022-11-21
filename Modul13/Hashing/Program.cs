@@ -1,4 +1,5 @@
 ﻿using Hashing;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 HashSet names = new HashSetLinearProbing(13);
 
@@ -29,3 +30,6 @@ Console.WriteLine("Contains Nina: " + names.Contains("Nina"));
 Console.WriteLine("Size: " + names.Size());
 Console.WriteLine();
 Console.WriteLine(names);
+
+
+

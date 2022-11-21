@@ -43,6 +43,13 @@ public class HashSetChaining : HashSet
 
     public bool Add(Object x)
     {
+        int maxSize = (int)Math.Floor(buckets.Length * 0.75);
+
+        if (currentSize >= maxSize)
+        {
+            Rehash();
+        }
+
         int h = HashValue(x);
 
         Node bucket = buckets[h];
@@ -69,7 +76,31 @@ public class HashSetChaining : HashSet
         return !found;
     }
 
-    public bool Remove(Object x)
+    public void Rehash()
+    {
+        
+        HashSetChaining newArray = new HashSetChaining(buckets.Length * 2);
+
+        for (int i = 0; i < buckets.Length; i++)
+        {
+            Node temp = buckets[i];
+
+            if (temp != null)
+            {
+                while (temp != null)
+                {
+                    newArray.Add(temp.Data);
+                    temp = temp.Next;
+                }
+            }
+        }
+
+
+        buckets = newArray.buckets;
+
+    }
+    public
+        bool Remove(Object x)
     {
         // TODO: Implement!
         // SKal returnerer true hvis den finder noget at fjerne
@@ -118,6 +149,11 @@ public class HashSetChaining : HashSet
     public int Size()
     {
         return currentSize;
+    }
+
+    public int Length()
+    {
+        return buckets.Length;
     }
 
     public override String ToString()
