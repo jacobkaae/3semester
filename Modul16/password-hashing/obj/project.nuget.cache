@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "9K77bKb43UoiVfHaQKc7NQWFWTFLQtDUDr4zjbfD9feOczl2dEp5i3kDxoZfQayLSG43829VhnMjVC/7u2Vz+w==",
+  "success": true,
+  "projectFilePath": "/Users/jacobkaae/Desktop/3semester/Modul16/password-hashing/HashedPassword.csproj",
+  "expectedPackageFiles": [
+    "/Users/jacobkaae/.nuget/packages/microsoft.aspnetcore.cryptography.internal/6.0.10/microsoft.aspnetcore.cryptography.internal.6.0.10.nupkg.sha512",
+    "/Users/jacobkaae/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/6.0.10/microsoft.aspnetcore.cryptography.keyderivation.6.0.10.nupkg.sha512"
+  ],
+  "logs": []
+}
