@@ -38,9 +38,17 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Azure.Identity": {
+              "target": "Package",
+              "version": "[1.8.0, )"
+            },
             "Azure.Messaging.ServiceBus": {
               "target": "Package",
               "version": "[7.11.1, )"
+            },
+            "Azure.Security.KeyVault.Secrets": {
+              "target": "Package",
+              "version": "[4.4.0, )"
             }
           },
           "imports": [
