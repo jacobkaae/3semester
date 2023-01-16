@@ -1,11 +1,12 @@
-﻿<Properties StartupConfiguration="{B78D45B5-DF6B-446F-9955-84FF7FB80297}|Default">
+﻿<Properties StartupConfiguration="{F93C7EDC-FF8B-459F-BA6A-B2E6AD8B49A7}|Default">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.secure-api PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.HashedPassword PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../unsecure-api/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../unsecure-api/DummyAuthenticationHandler.cs">
     <Files>
-      <File FileName="../unsecure-api/DummyAuthenticationHandler.cs" />
+      <File FileName="../unsecure-api/DummyAuthenticationHandler.cs" Line="48" Column="39" />
       <File FileName="../unsecure-api/Program.cs" Line="1" Column="1" />
       <File FileName="Program.cs" />
     </Files>
@@ -13,9 +14,14 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="HashedPassword" expanded="True">
-            <Node name="HashedPassword" expanded="True" />
+            <Node name="HashedPassword" expanded="True" selected="True" />
             <Node name="secure-api" expanded="True" />
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>authHeader</Value>
         </State>
       </Pad>
     </Pads>
