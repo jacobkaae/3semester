@@ -1,14 +1,29 @@
 ﻿<Properties StartupConfiguration="{0D66FE84-E337-4D92-BA9F-364E858B86B8}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Service/DataService.cs">
     <Files>
       <File FileName="Program.cs" Line="1" Column="1" />
+      <File FileName="Data/BoardContext.cs" Line="27" Column="1" />
+      <File FileName="Data/BoardContext 2.cs" Line="3" Column="11" />
+      <File FileName="Service/DataService.cs" Line="10" Column="2" />
+      <File FileName="Model/Board.cs" Line="1" Column="1" />
+      <File FileName="Model/ToDo.cs" Line="1" Column="1" />
+      <File FileName="Model/User.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TodoApi" expanded="True">
             <Node name="TodoApi" expanded="True">
+              <Node name="Data" expanded="True" />
               <Node name="Model" expanded="True" />
+              <Node name="Service" expanded="True">
+                <Node name="DataService.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -18,11 +33,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.TodoApi PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.TodoApi PreferredExecutionTarget="/Applications/Safari.app" />
 </Properties>

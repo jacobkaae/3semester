@@ -2,26 +2,34 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Model;
 
-namespace Opgave1.Model
+namespace Data
 {
     public class BoardContext : DbContext
     {
         public DbSet<Board> Boards { get; set; }
-        public DbSet<User> User { get; set; }
-        public DbSet<ToDo> ToDo { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<ToDo> ToDos { get; set; }
 
-
-
-        public string DbPath { get; }
-
-        public BoardContext()
+        public BoardContext(DbContextOptions<BoardContext> options)
+            : base(options)
         {
-            DbPath = "bin/Boards.db";
+            // Den her er tom. Men ": base(options)" sikre at constructor
+            // på DbContext super-klassen bliver kaldt.
         }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder options)
-            => options.UseSqlite($"Data Source={DbPath}");
     }
+
+
+    //public DbSet<Book> Books => Set<Book>();
+    //public DbSet<Author> Authors => Set<Author>();
+
+
+    //public BookContext(DbContextOptions<BookContext> options)
+    //    : base(options)
+    //{
+    //    // Den her er tom. Men ": base(options)" sikre at constructor
+    //    // på DbContext super-klassen bliver kaldt.
+    //}
 }
 

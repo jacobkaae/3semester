@@ -1,45 +1,40 @@
 ﻿<Properties StartupConfiguration="{2CC5E15B-8912-4E9C-891E-55526F71437A}|Default">
-  <MonoDevelop.Ide.ItemProperties.Opgave3 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../Modul3/Opgave5/Program.cs">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.TodoListBlazor PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.ItemProperties.Opgave3 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
-      <File FileName="Program.cs" Line="35" Column="7" />
-      <File FileName="../Opgave1/Program.cs" Line="1" Column="1" />
-      <File FileName="../Opgave2/Program.cs" Line="46" Column="8" />
-      <File FileName="../Opgave5/Program.cs" Line="28" Column="18" />
+      <File FileName="Program.cs" Line="27" Column="1" />
+      <File FileName="../Opgave1/Program.cs" />
+      <File FileName="../Opgave2/Program.cs" />
+      <File FileName="../Opgave5/Program.cs" />
       <File FileName="../../Modul3/Opgave3/Program.cs" Line="9" Column="1" />
-      <File FileName="../../Modul3/Opgave4/Program.cs" Line="9" Column="1" />
+      <File FileName="../../Modul3/Opgave4/Program.cs" />
       <File FileName="../../Modul3/Opgave5/Program.cs" Line="24" Column="1" />
-      <File FileName="../../Modul3/Opgave6/Program.cs" Line="33" Column="33" />
-      <File FileName="../../Modul3/Opgave8/Program.cs" Line="53" Column="2" />
-      <File FileName="../Opgave4/Program.cs" Line="1" Column="1" />
+      <File FileName="../../Modul3/Opgave6/Program.cs" />
+      <File FileName="../../Modul3/Opgave8/Program.cs" />
+      <File FileName="../Opgave4/Program.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Opgave3" expanded="True">
             <Node name="Opgave3" expanded="True" />
+            <Node name="Opgave3" expanded="True" />
             <Node name="Opgave4" expanded="True" />
-            <Node name="Opgave4" expanded="True" />
-            <Node name="Opgave5" expanded="True">
-              <Node name="Program.cs" selected="True" />
-            </Node>
+            <Node name="Opgave5" expanded="True" />
             <Node name="Opgave8" expanded="True" />
             <Node name="TodoListBlazor" expanded="True" />
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/jacobkaae/Desktop/3semester/Modul2/Opgave3/Program.cs" relfile="Program.cs" line="11" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.TodoListBlazor PreferredExecutionTarget="/Applications/Safari.app" />
 </Properties>

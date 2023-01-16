@@ -14,11 +14,11 @@ var CreateWordFilterFn = (string[] words) =>
     };
 };
 
-//var ord = new string[] { "Hej", "Med", "Dig" };
+var ord = new string[] { "Hej", "Med", "Dig" };
 
-//var vedIk = CreateWordFilterFn(ord);
+var vedIk = CreateWordFilterFn(ord);
 
-//Console.WriteLine("Test:" + vedIk("Goddag, Hej Med Dig Jacob"));
+Console.WriteLine("Test:" + vedIk("Goddag, Hej Med Dig Jacob"));
 
 
 // CreateWordReplacerFn: Funktionen skal returnere en ny funktion.

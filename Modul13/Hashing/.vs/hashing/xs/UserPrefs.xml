@@ -1,43 +1,31 @@
 ﻿<Properties StartupConfiguration="{19A8F856-03C9-4AE0-80DA-A2830FE3DF2B}|Default">
-  <MonoDevelop.Ide.ItemProperties.hashing PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/jacobkaae/Desktop/3semester/Modul13/Hashing/Hashing.Tests.cs" relfile="Hashing.Tests.cs" line="95" column="1" />
       <Breakpoint file="/Users/jacobkaae/Desktop/3semester/Modul13/Hashing/HashSetLinearProbing.cs" relfile="HashSetLinearProbing.cs" line="22" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.hashing PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="HashSetLinearProbing.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Hashing.Tests.cs">
     <Files>
-      <File FileName="Program.cs" Line="5" Column="17" />
-      <File FileName="HashSet.cs" Line="9" Column="1" />
-      <File FileName="Hashing.Tests.cs" Line="102" Column="52" />
-      <File FileName="HashSetChaining.cs" Line="26" Column="6" />
-      <File FileName="HashSetLinearProbing.cs" Line="119" Column="24" />
+      <File FileName="Program.cs" Line="1" Column="1" />
+      <File FileName="HashSet.cs" Line="1" Column="1" />
+      <File FileName="Hashing.Tests.cs" Line="1" Column="1" />
+      <File FileName="HashSetChaining.cs" Line="82" Column="57" />
+      <File FileName="HashSetLinearProbing.cs" />
+      <File FileName="HashMap.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="hashing" expanded="True">
-            <Node name="hashing" expanded="True" />
+            <Node name="hashing" expanded="True">
+              <Node name="Hashing.Tests.cs" selected="True" />
+            </Node>
           </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State>
-          <Value>h</Value>
-          <Value>start</Value>
-          <Value>found</Value>
-          <Value>x</Value>
-          <Value>buckets</Value>
-          <Value>buckets[h]</Value>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="hashing" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
