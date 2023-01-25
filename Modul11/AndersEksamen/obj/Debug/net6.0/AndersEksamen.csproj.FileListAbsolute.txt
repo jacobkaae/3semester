@@ -1,0 +1,15 @@
+/Users/jacobkaae/Desktop/3semester/Modul11/AndersEksamen/obj/Debug/net6.0/AndersEksamen.csproj.AssemblyReference.cache
+/Users/jacobkaae/Desktop/3semester/Modul11/AndersEksamen/obj/Debug/net6.0/AndersEksamen.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jacobkaae/Desktop/3semester/Modul11/AndersEksamen/obj/Debug/net6.0/AndersEksamen.AssemblyInfoInputs.cache
+/Users/jacobkaae/Desktop/3semester/Modul11/AndersEksamen/obj/Debug/net6.0/AndersEksamen.AssemblyInfo.cs
+/Users/jacobkaae/Desktop/3semester/Modul11/AndersEksamen/obj/Debug/net6.0/AndersEksamen.csproj.CoreCompileInputs.cache
+/Users/jacobkaae/Desktop/3semester/Modul11/AndersEksamen/bin/Debug/net6.0/AndersEksamen
+/Users/jacobkaae/Desktop/3semester/Modul11/AndersEksamen/bin/Debug/net6.0/AndersEksamen.deps.json
+/Users/jacobkaae/Desktop/3semester/Modul11/AndersEksamen/bin/Debug/net6.0/AndersEksamen.runtimeconfig.json
+/Users/jacobkaae/Desktop/3semester/Modul11/AndersEksamen/bin/Debug/net6.0/AndersEksamen.dll
+/Users/jacobkaae/Desktop/3semester/Modul11/AndersEksamen/bin/Debug/net6.0/AndersEksamen.pdb
+/Users/jacobkaae/Desktop/3semester/Modul11/AndersEksamen/obj/Debug/net6.0/AndersEksamen.dll
+/Users/jacobkaae/Desktop/3semester/Modul11/AndersEksamen/obj/Debug/net6.0/refint/AndersEksamen.dll
+/Users/jacobkaae/Desktop/3semester/Modul11/AndersEksamen/obj/Debug/net6.0/AndersEksamen.pdb
+/Users/jacobkaae/Desktop/3semester/Modul11/AndersEksamen/obj/Debug/net6.0/AndersEksamen.genruntimeconfig.cache
+/Users/jacobkaae/Desktop/3semester/Modul11/AndersEksamen/obj/Debug/net6.0/ref/AndersEksamen.dll
